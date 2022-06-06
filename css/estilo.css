@@ -1,0 +1,644 @@
+* { box-sizing: border-box;
+}
+
+#dividheader {
+    background-color: rgb(255, 0, 106);
+}
+
+#dividnav {
+    background-color: blue;
+}
+
+#dividsection {
+    background-color: green;
+}
+
+#dividaside {
+    background-color: yellow;
+}
+
+#dividfooter {
+    background-color: black;
+}
+
+@font-face {
+    font-family:"fuente1";
+    src: url("../fuente/Gabriola.ttf") format('truetype');
+}
+
+@font-face {
+   font-family:"fuente2";
+   src: url("../fuente/Y2K_neophyte.ttf") format('truetype');
+}
+
+@font-face {
+   font-family:"fuente3";
+   src: url("../fuente/Bookworm.ttf")  format('truetype');
+}
+
+@font-face {
+    font-family:"fuente4";
+    src: url("../fuente/GelPenUprightLight.ttf")  format('truetype');
+ }
+
+
+@media (max-width:300px){
+.flex-conteiner {
+    flex-direction: row;}
+.flex-containerdiv {
+    flex-basis: 100vw;}
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(250, 204, 212);
+    padding: 10px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.flex-containerdiv {
+    background-color: gainsboro;
+    width: 100vw;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+@media (max-width: 500px){
+    body {
+        color:#25d366;}
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.float{
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 60px;
+	text-align: center;
+    font-size: 40px;
+	box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color: #fff;
+}
+
+.my-float{
+	margin-top: 10px;
+}
+
+header {
+    background-image: url(../imagenes/125_receta.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 65vh;
+	background-size: 100vw;
+    background-size: contain no-repeat center;
+}
+
+h1 {
+    color:darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 55px;
+    font-size: 3rem;
+}
+
+h1:hover {
+    font-size: 80px;
+}
+
+@media screen and (max-width: 700px) {
+    .container a {
+        color: black;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row {
+        flex-direction: column;
+        flex-basis: 100vw;
+    }
+}
+
+@media screen and (min-width:700px) {
+    nav {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        background-color: palevioletred;
+        width: 100vw;
+        height: 12vh;
+        padding-top: 0.6%;
+        flex-wrap: wrap;
+    }
+}
+
+:link {
+    size: 50px;
+    color: rgb(2, 68, 6);
+}
+
+a:visited {
+    color: rgb(2, 168, 13);
+}
+
+.navrecetas li {
+    display: inline;
+    padding: 0.5rem 2rem;
+    align-items: center;
+    margin: 0 8px 0px 0;
+    border: 2px solid;
+    color: rgb(204, 57, 81);
+    padding: 0.6rem 0.75rem;
+    border-radius: 20%;
+    background-color: rgb(253, 211, 218);
+    flex-grow: wrap;
+}
+@media screen and (max-width:700px) {
+    .navrecetas li {
+        display: inline;
+        padding: 0.5rem 2rem;
+        align-items: center;
+        margin: 0 8px 0px 0;
+        border: 2px solid;
+        color: rgb(204, 57, 81);
+        padding: 0.6rem 0.75rem;
+        border-radius: 20%;
+        background-color: rgb(253, 211, 218);
+        flex-grow: wrap;
+    }
+    .navrecetasli ul{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
+    .navrecetasli{
+      width: 100vw;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .navrecetas a:hover {
+        background-color: rgb(253, 211, 218);
+        border-bottom-style: dotted;
+        color: rgb(204, 57, 81);
+    }
+}
+
+@media screen and (min-width:700px) {
+    .navrecetas li:last-child {
+        background-color: rgb(253, 211, 218);
+        border: 2px solid rgb(204, 57, 81);
+        padding: 0.25rem 1rem;
+        border-radius: 0.5px;
+    }
+}
+
+.rowcontenedor{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap:nowrap;
+}
+
+@media screen and (max-width:700px)
+{
+    .rowcontenedor{
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         width: 100vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+section { 
+    width: 45vw;
+    background-color: beige;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    text-align: justify;
+    border-top: 12Px solid rgb(243, 142, 159);
+    box-shadow: 5px 8px 12px black;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:700px) {
+    .h2 {
+        font-size: 8rem;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h3:hover {
+    color:rgb(18, 194, 18);
+}
+
+@media screen and (max-width:700px) {
+    .p1 {
+        text-align: justify;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .p2 .p3 {
+        font-family:"fuente1";
+        color: black;
+        font-size: 1.2rem;
+    }
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    color:brown;
+}
+
+h5 {
+    font-size: 1.8rem;
+    color: black;
+    text-align: justify;
+}
+
+.ul {
+    font-size: 1rem;
+    color: black;
+    font-family:"fuente2";
+    text-align: justify;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.ul li:hover {
+    background-color: rgb(245, 131, 131);
+}
+
+bdi {
+    color: brown;
+    text-align: justify;
+}
+
+.p4 bdi {
+    color: black;
+    text-align: justify;
+}
+
+h6 {
+    font-size: 1.8rem;
+    color: black;
+    text-align: justify;
+}
+
+.ol {
+    font-size: 1rem;
+    color: black;
+    font-family:"fuente2";
+    text-align: justify;
+    margin: 2%;
+}
+
+.ol li:hover {
+    background-color: rgb(245, 131, 131) ;
+}
+
+@media (max-width: 700px) {
+    section { background-color:rgb(122, 236, 231);
+              width: 100vw;
+    }
+    aside{
+          width: 100%;
+    }
+}
+
+aside { 
+    width: 45vw;
+    clear: both;
+    background-color: khaki;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    text-align: justify;
+    margin-left: 0.2vw;
+    padding: 25px;
+    flex-wrap: wrap;
+    border-top: 12Px solid rgb(163, 148, 15);
+    box-shadow: 5px 8px 12px black;
+}
+
+.h22 {
+    font-size: 1.20rem;
+    font-family:"fuente3";
+    color: rgb(12, 92, 32);
+    text-align: justify;
+    margin: 1vw;
+}
+
+.ph2 {
+    font-size: 1.20rem;
+    font-family:"fuente3";
+    color: rgb(5, 30, 63);
+    text-align: justify;
+    margin: 1vw;
+}
+
+.humita {
+    width: 300px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
+}
+
+.humita:hover {
+    width: 66.5%;
+    border: 10px solid pink;
+    padding: 3%;
+    display: flex;
+}
+
+.p8 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: rgb(107, 66, 3);
+}
+
+@media screen and (max-width: 700px) {
+    .vinos {
+        display: contents center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .vinos {
+        display: none;
+    }
+}
+
+.vinos {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+/*--footer*/
+.footer { 
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.footer .columna-1 { 
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .columna-1 .boxcontenido { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .columna-1 .boxcontenido img { 
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.footer .columna-1 .box h2 { 
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-family:"fuente4";
+}
+
+.footer .columna-1 .box p { 
+    color: #efefef;
+    margin-bottom: 100px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.footer .columna-1 .red-social a { 
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    padding-left: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.footer .columna-2 { 
+    background-color: palevioletred;
+    text-align: center;
+    color: #fff;
+    padding: 15px 10px;
+}
+
+.footer .columna-2final { 
+    font-size: 5px;
+} 
+
+form {
+    float: left;
+    padding-left: 30px;
+}
+
+label {
+    width: auto;
+    text-align: right;
+}
+
+.input,textarea {
+ /* Tipo de letra monoespaciada */
+ font: 15px sans-serif;
+ /* Tamaño campo de texto */
+ width: 550px;
+ box-sizing: border-box;
+ background-color: rgb(242, 255, 231);
+ /* Bordes del campo del formulario */
+ border: 5px solid pink;
+}
+
+input:focus,
+textarea:focus {
+ /* Para elementos que tienen el cursor */
+ border-color: rgb(233, 255, 208);
+}
+
+textarea {
+ vertical-align: top;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ /* Espacio para escribir texto */
+ height: 50vh;
+}
+
+.button {
+ padding-left: 50%;
+}
+
+.enviar {
+    padding-left: 50%;
+    margin: 10%;
+}
+
+/*para todo lo que esta en el body*/
+/*mobile first*/
+@media screen and (max-width:700px){
+    header {
+        background-color: rgb(202, 236, 134);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 33.3vh;
+        background-size: 100vw;
+        background-size: contain no-repeat center;
+    }
+    .flex-container{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    nav {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        background-color: palevioletred;
+        width: 100vw;
+        height: 12vh;
+        padding-top: 0.6%;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    section {
+        background-color: white;
+        width: 100%;
+        height: 33.3vh;
+        padding: 30px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: left;
+        text-align: justify;
+        border-top: 12Px solid rgb(243, 142, 159);
+        box-shadow: 5px 8px 12px black;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width:700px) {
+    aside {
+        clear: both;
+        background-color: turquoise;
+        width: 100%;
+        height: 33.4vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: left;
+        text-align: justify;
+        margin-left: 3%;
+        padding: 25px;
+        flex-wrap: wrap;
+        overflow: scroll;
+        border-top: 12Px solid rgb(163, 148, 15);
+        box-shadow: 5px 8px 12px black;
+    }
+    b{
+      width: 100vw;
+    }
+}
+
+@media screen and (max-width:800px) { 
+    .footer .columna-1 { 
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    } 
+}
+
+/*mobile first*/
+    body {font-size: 15px;
+    }
+    section {
+        overflow: scroll;
+    }
+    aside {
+        overflow: scroll;
+    }
+
+/*tablet*/
+@media (min-width:768px){
+     body {font-size: 15px;
+    }
+    section {
+        overflow: scroll;}
+    aside {
+        overflow: scroll;}
+}
+
+/*laptop*/
+@media (min-width:992px){
+     body { font-size: 16px;}
+}
+
+/*pantalla*/
+@media (min-width:1200px)
+{
+    body {font-size: 17px;
+    }
+}
